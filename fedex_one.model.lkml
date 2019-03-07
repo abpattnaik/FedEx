@@ -20,6 +20,6 @@ explore: tbl_ratings {}
 
 explore: tbl_ratings_geo {}
 
-explore: tbl_ratings_geo_details {}
-
 explore: test {}
+
+explore: geo_data1 {}

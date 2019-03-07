@@ -1,4 +1,4 @@
-view: geo_data {
+view: geo_data1 {
   derived_table: {
     sql: SELECT * FROM `fedexdnapocvk.fedexdb.tblRatingsGeoDetails`
       ;;
@@ -33,11 +33,6 @@ view: geo_data {
     type: string
     sql: ${TABLE}.plat ;;
   }
-  dimension: Pickup {
-    type: location
-    sql_latitude: ${TABLE}.plong;;
-    sql_longitude: ${TABLE}.plat ;;
-  }
 
   dimension: dlocation {
     type: string
@@ -52,6 +47,12 @@ view: geo_data {
   dimension: dlat {
     type: string
     sql: ${TABLE}.dlat ;;
+  }
+
+  dimension: Pickup {
+    type: location
+    sql_latitude: ${TABLE}.plong;;
+    sql_longitude: ${TABLE}.plat ;;
   }
 
   dimension: Drop {
